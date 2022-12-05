@@ -2,7 +2,7 @@ import React from 'react';
 import { format } from 'date-fns';
 import Month from './Month'
 import {withCurrentDay} from '../../../HOCs/withCurrentDay'
-import styles from './Calendar.module.css';
+import styles from './CalendarBody.module.css';
 
 
 const CalendarBody = (props) => {

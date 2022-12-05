@@ -9,11 +9,11 @@ const Month = (props) => {
     const {currentDay} = props;
 
     const WeeksInMonth = getWeeksInMonth(new Date(2022, getDate(new Date()), getMonth(currentDay)), { weekStartsOn: 0 }); 
-    const resultWeek = getWeek(new Date(2022, getMonth(currentDay), 1));  
+    const resultWithWeek = getWeek(new Date(2022, getMonth(currentDay), 1));  
     
     const arrayOfWeeks = new Array(WeeksInMonth)
                     .fill(null)
-                    .map((el, index) => <Week year='2022' week={resultWeek + index} key={index} />)
+                    .map((el, index) => <Week year='2022' week={resultWithWeek + index} key={index} />)
 
         return (
         <tbody className={styles.numbersOfMonth}>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import CalendarBody from './CalendarBody';
-import CurrentDay from './CurrentDay;'
+import CurrentDay from './CurrentDay/index'
 import CurrentDayContext from "../../contexts/CurrentDayContext";
 import styles from './Calendar.module.css'
 

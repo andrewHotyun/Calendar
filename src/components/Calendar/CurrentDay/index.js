@@ -1,7 +1,7 @@
 import { format } from 'date-fns';
 import React from 'react';
 
-const CurrentDay = () => {
+const CurrentDay = (props) => {
     const {day} = props;
     return (
         <div>
