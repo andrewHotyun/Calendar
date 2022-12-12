@@ -1,14 +1,18 @@
-import { format } from 'date-fns';
 import React from 'react';
+import { format } from 'date-fns';
+import { withCurrentDay } from '../../../HOCs/withCurrentDay';
+import styles from './CurrentDay.module.css';
 
 const CurrentDay = (props) => {
     const {day} = props;
     return (
-        <div>
-            <p>{format(day, 'cccc')}</p>    
-            <p>{format(day, 'd')}</p>
+        <div className={styles.leftSide}>
+            <p className={styles.text}>{format(day, 'cccc')}</p>    
+            <p className={styles.number}>{format(day, 'd')}</p>
         </div>
     );
 }
 
-export default CurrentDay;
+const wrappedComponent = withCurrentDay(CurrentDay)
+
+export default wrappedComponent;

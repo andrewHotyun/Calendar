@@ -1,6 +1,7 @@
 import React from 'react';
 import { format, getMonth } from 'date-fns';
 import { withCurrentDay } from '../../../../HOCs/withCurrentDay';
+import styles from './Day.css';
 
 const Day = (props) => {
     const {day, currentDay, getActive} = props;
